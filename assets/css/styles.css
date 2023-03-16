@@ -148,7 +148,7 @@ body {
 }
 
 .cs-image {
-    background-image: url("/assets/images/side_pic_bc.jpg");
+    background-image: url("https://hemantdutta.github.io/IntelHackathon_frontend/assets/images/side_pic_bc.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
