@@ -23,9 +23,9 @@
             <div class="list-cont">
                 <ul class="list-unstyled d-flex nav-list justify-content-around align-items-center m-0">
                     <li class="byteLogo"><img src="assets/images/bc_logo_trans.png" class="card-img" alt=""></li>
-                    <li><a href="#" class="active"><span>Home</span></a></li>
-                    <li><a href="#"><span>About</span></a></li>
-                    <li><a href="https://github.com/HemantDutta/IntelHackathon_frontend"><span>Github <i class="fa-brands fa-github"></i></span></a></li>
+                    <li><a href="index.html" class="active"><span>Home</span></a></li>
+                    <li><a href="https://github.com/HemantDutta/IntelHackathon_frontend/blob/main/README.md" target="_blank"><span>About</span></a></li>
+                    <li><a href="https://github.com/HemantDutta/IntelHackathon_frontend" target="_blank"><span>Github <i class="fa-brands fa-github"></i></span></a></li>
                 </ul>
             </div>
             <i class="fa-solid fa-chevron-up text-light upArr" id="up" onclick="up()"></i>
@@ -39,7 +39,7 @@
                     <div class="top-text">
                         <h2 class="text-light fw-bold">ByteCode Attendance System</h2>
                     </div>
-                    <div class="form-content mt-5">
+                    <div class="form-content mt-5" id="formCont">
                         <form>
                             <div class="input-wrapper">
                                 <label for="classSelect" class="text-light fw-bold mb-2">Choose your class...</label>
@@ -74,9 +74,25 @@
                             </div>
                         </form>
                     </div>
+                    <div class="attendance-list d-none" id="attendTable">
+                        <h2 class="text-light fw-bold text-uppercase mt-4">Attendance List</h2>
+                        <table>
+                            <thead>
+                                <th>Register No.</th>
+                                <th colspan="2">Name</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Hemant Dutta</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="col-lg-5 col-xl-5 col-12 cs-image d-flex justify-content-center" id="csImg">
+                <div class="col-lg-5 col-xl-5 col-12 cs-image d-flex flex-column justify-content-center" id="csImg">
                     <canvas id="myCanvas" class=""></canvas>
+                    <button class="mt-4 d-none" onclick="download()" id="Capture">Capture</button>
                 </div>
             </div>
         </div>
@@ -95,6 +111,7 @@
 </div>
 <!--Main Container End-->
 <!--Scripts-->
+<script src="assets/js/jquery-3.6.1.min.js"></script>
 <script src="assets/js/bootstrap.bundle.js"></script>
 <script src="assets/js/scripts.js"></script>
 </body>
