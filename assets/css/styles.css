@@ -10,6 +10,7 @@ body {
 
 .main-cont {
     width: 100vw;
+    position: relative;
     min-height: 100vh;
     background-color: #131417;
     background-position: center;
@@ -131,3 +132,42 @@ body {
     border-radius: 50px;
 }
 
+/*Canvas*/
+#myCanvas {
+    border-radius: 50px;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+/*Alert*/
+
+.validAlert {
+    position: absolute;
+    right: 3rem;
+    width: 20rem;
+    bottom: 3rem;
+    overflow-y: hidden;
+}
+
+.validAlert .validInner {
+    background-color: #212121;
+    transform: translateY(120px);
+    transition: all 0.4s ease-out;
+    padding: 1rem;
+}
+
+.validAlert .topText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.validAlert .topText span, .fa-xmark {
+    font-size: 1.5em;
+}
+
+.validAlert .fa-xmark {
+    cursor: pointer;
+}

@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
 <!--Main Container-->
@@ -70,14 +70,25 @@
                                 </select>
                             </div>
                             <div class="button-wrapper mt-4">
-                                <button>Start</button>
+                                <button type="button" onclick="moveToAI()">Start</button>
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-5 col-xl-5 col-12 cs-image">
-
+                <div class="col-lg-5 col-xl-5 col-12 cs-image d-flex justify-content-center" id="csImg">
+                    <canvas id="myCanvas" class=""></canvas>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="validAlert">
+        <div class="validInner" id="valIn">
+            <div class="topText">
+                <span class="text-light fw-bold"><i class="fa-solid fa-circle-exclamation text-danger"></i>&nbsp;Error</span>
+                <i class="fa-solid fa-xmark text-light" onclick="closeAlert()"></i>
+            </div>
+            <div class="validMsg px-2 mt-4">
+                <span class="text-light" id="errorMsg"></span>
             </div>
         </div>
     </div>
