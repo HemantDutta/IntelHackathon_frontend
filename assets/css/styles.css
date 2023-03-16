@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/*Home Page*/
+
+.main-cont {
+    width: 100vw;
+    min-height: 100vh;
+    background: #ffffff;
+    background: -webkit-linear-gradient(0deg, #ffffff 0%, #474bff 100%);
+    background: linear-gradient(0deg, #ffffff 0%, #474bff 100%);
+}
