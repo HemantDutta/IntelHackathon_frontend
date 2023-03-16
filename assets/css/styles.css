@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -10,7 +11,63 @@ body {
 .main-cont {
     width: 100vw;
     min-height: 100vh;
-    background: #ffffff;
-    background: -webkit-linear-gradient(0deg, #ffffff 0%, #474bff 100%);
-    background: linear-gradient(0deg, #ffffff 0%, #474bff 100%);
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+/*Navbar*/
+
+.navbar {
+    border-radius: 80px;
+    transition: all 0.4s ease-out;
+    height: 170px;
+}
+
+.navbar .list-cont .nav-list li a{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #F9ED69;
+    position: relative;
+}
+
+.navbar .list-cont .nav-list li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: #F9ED69;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar .list-cont .nav-list li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar .list-cont .byteLogo {
+    width: 10%;
+    transition: all 0.4s ease;
+}
+
+.navbar .list-cont .byteLogo:hover {
+    transform: rotate(60deg) scale(1.5);
+}
+
+.navbar .upArr  {
+    position: absolute;
+    bottom: -10px;
+    cursor: pointer;
+    background-color: #212129;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all 0.6s ease;
 }

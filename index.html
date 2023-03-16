@@ -6,23 +6,31 @@
     <title>ByteCode Attendance System | Intel OneAPI Hackathon</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/images/bc_logo_trans.png">
+    <!--  Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <!--Main Container-->
 <div class="main-cont">
 
     <!--Navbar-->
-        <nav class="navbar d-flex">
-            <div class="left-sect">
-                <div class="christLogo"></div>
+    <div class="nav-cont d-flex justify-content-center">
+        <nav class="navbar d-flex bg-dark w-50 mt-5 justify-content-center p-3 down" id="navbar">
+            <div class="list-cont">
+                <ul class="list-unstyled d-flex nav-list justify-content-around align-items-center m-0">
+                    <li class="byteLogo"><img src="assets/images/bc_logo_trans.png" class="card-img" alt=""></li>
+                    <li><a href="#"><span>Home</span></a></li>
+                    <li><a href="#"><span>Attendance</span></a></li>
+                    <li><a href="https://github.com/HemantDutta/IntelHackathon_frontend"><span>Github <i class="fa-brands fa-github"></i></span></a></li>
+                </ul>
             </div>
-            <div class="mid-sect">
-                <div class="byteCodeLogo"></div>
-            </div>
-            <div class="right-sect">
-                
-            </div>
+            <i class="fa-solid fa-chevron-up text-light upArr" id="up" onclick="up()"></i>
         </nav>
+    </div>
     <!--Navbar End-->
 
 </div>
