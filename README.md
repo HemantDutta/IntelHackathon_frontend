@@ -69,4 +69,4 @@ Overall, building a facial recognition system is a challenging and rewarding exp
 
 [Sarthak Mathur](https://github.com/Sarthak1408)
 
-[Shubham Raithatha](https://github.com/)
+[Shubham Raithatha](https://github.com/ShubhamRaithatha)

@@ -31,6 +31,9 @@ function moveToAI() {
     let valAlert = document.getElementById("valIn");
     let errMsg = document.getElementById("errorMsg");
     let csImg = document.getElementById("csImg");
+    let capture = document.getElementById("Capture");
+    let table = document.getElementById("attendTable");
+    let form = document.getElementById("formCont");
 
     if(className === "#" || hours === "#" || teacher === "#")
     {
@@ -41,12 +44,15 @@ function moveToAI() {
         }, 10);
     }
     else{
+        form.classList.add("d-none");
+        table.classList.remove("d-none");
+        capture.classList.remove("d-none");
         csImg.style.backgroundImage = "url()";
         let promise = navigator.mediaDevices.getUserMedia({video: true});
         CANVAS = document.getElementById("myCanvas");
         CONTEXT = CANVAS.getContext("2d");
         CANVAS.width = 500;
-        CANVAS.height = 500;
+        CANVAS.height = 400;
         promise.then(function (signal){
             VID = document.createElement("video");
             VID.srcObject = signal;
@@ -63,6 +69,16 @@ function moveToAI() {
             }, 10);
         })
     }
+}
+
+//Download
+function download(){
+    let canvasUrl = CANVAS.toDataURL("image/jpeg", 1);
+    const createEl = document.createElement('a');
+    createEl.href = canvasUrl;
+    createEl.download = "pyImg";
+    createEl.click();
+    createEl.remove();
 }
 
 //Update Canvas
