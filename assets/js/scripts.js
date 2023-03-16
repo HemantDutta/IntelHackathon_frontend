@@ -17,5 +17,4 @@ function up() {
         nav.classList.add("down");
         upKey.style.transform = "rotate(0deg)";
     }
-
 }

@@ -23,8 +23,8 @@
             <div class="list-cont">
                 <ul class="list-unstyled d-flex nav-list justify-content-around align-items-center m-0">
                     <li class="byteLogo"><img src="assets/images/bc_logo_trans.png" class="card-img" alt=""></li>
-                    <li><a href="#"><span>Home</span></a></li>
-                    <li><a href="#"><span>Attendance</span></a></li>
+                    <li><a href="#" class="active"><span>Home</span></a></li>
+                    <li><a href="#"><span>About</span></a></li>
                     <li><a href="https://github.com/HemantDutta/IntelHackathon_frontend"><span>Github <i class="fa-brands fa-github"></i></span></a></li>
                 </ul>
             </div>
@@ -32,7 +32,55 @@
         </nav>
     </div>
     <!--Navbar End-->
+    <div class="cs-cont mt-5">
+        <div class="class-select-form p-5">
+            <div class="row justify-content-around">
+                <div class="col-lg-5 cs-form">
+                    <div class="top-text">
+                        <h2 class="text-light fw-bold">ByteCode Attendance System</h2>
+                    </div>
+                    <div class="form-content mt-5">
+                        <form>
+                            <div class="input-wrapper">
+                                <label for="classSelect" class="text-light fw-bold mb-2">Choose your class...</label>
+                                <select class="form-select" name="classSelect" id="classSelect">
+                                    <option value="#" selected>Select an option</option>
+                                    <option value="3MCA">3 MCA A</option>
+                                    <option value="3MCB">3 MCA B</option>
+                                </select>
+                            </div>
+                            <div class="input-wrapper mt-4">
+                                <label for="hourSelect" class="text-light fw-bold mb-2">Select Hour</label>
+                                <select class="form-select" name="hourSelect" id="hourSelect">
+                                    <option value="#" selected>Select an option</option>
+                                    <option value="9-10">9:00 - 10:00</option>
+                                    <option value="10-11">10:00 - 11:00</option>
+                                    <option value="11-12">11:00 - 12:00</option>
+                                    <option value="12-13">12:00 - 13:00</option>
+                                    <option value="14-15">14:00 - 15:00</option>
+                                    <option value="15-16">15:00 - 16:00</option>
+                                </select>
+                            </div>
+                            <div class="input-wrapper mt-4">
+                                <label for="teachSelect" class="text-light fw-bold mb-2">Choose Faculty...</label>
+                                <select class="form-select" name="teachSelect" id="teachSelect">
+                                    <option value="#" selected>Select an option</option>
+                                    <option value="ShoneySeb">Dr. Shoney Sebastian</option>
+                                    <option value="KavR">Dr. Kavitha R.</option>
+                                </select>
+                            </div>
+                            <div class="button-wrapper mt-4">
+                                <button>Start</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 cs-image">
 
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!--Main Container End-->
 <!--Scripts-->
